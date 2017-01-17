@@ -61,7 +61,7 @@ module.exports = function (content, file, setting) {
     // file.addRequire(tokenFile.getId());
 
     if (!output.template) {
-        fis.log.warn('tag "tempate" not found.');
+        fis.log.warn('tag "tempate" not found. at ' + file.subpath);
         output.template = {};
         output.template.content = '';
     }
