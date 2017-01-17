@@ -66,7 +66,6 @@ module.exports = function (content, file, setting) {
             if (s && attrValue) {
                 // 'class=' + '"' + 'btn btn-info' + '"'
                 return attrName + quote + attrValue.replace(rClassName, function (s, className, index) {
-                    console.log((index ? ' ' : '') + (exportedTokens[className] || className));
                     return (index ? ' ' : '') + (exportedTokens[className] || className);
                 }) + quote;
             } else {
@@ -74,7 +73,6 @@ module.exports = function (content, file, setting) {
             }
         });
     } while (rAttr.lastIndex != 0)
-    console.log(content);
 
     return content;
 }
