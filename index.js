@@ -65,7 +65,7 @@ module.exports = function (content, file, setting) {
         output.template = {};
         output.template.content = '';
     }
-    content = output.template.content || content;
+    content = output.template.content;
     do {
         content = content.replace(rAttr, function (s, attrName, quote, attrValue) {
             if (s && attrValue) {
