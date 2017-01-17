@@ -1,6 +1,6 @@
 {
   "name": "fis3-postprocessor-component-view",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "baidu fis3 plugin for css modules",
   "main": "index.js",
   "scripts": {
