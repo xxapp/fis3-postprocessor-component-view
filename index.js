@@ -60,6 +60,9 @@ module.exports = function (content, file, setting) {
     // file.derived.push(tokenFile);
     // file.addRequire(tokenFile.getId());
 
+    if (!output.template) {
+        throw new Error('tag "tempate" not found.');
+    }
     content = output.template.content || content;
     do {
         content = content.replace(rAttr, function (s, attrName, quote, attrValue) {
