@@ -62,6 +62,7 @@ module.exports = function (content, file, setting) {
 
     if (!output.template) {
         fis.log.warn('tag "tempate" not found.');
+        output.template = {};
         output.template.content = '';
     }
     content = output.template.content || content;
