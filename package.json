@@ -1,0 +1,27 @@
+{
+  "name": "fis3-postprocessor-component-view",
+  "version": "1.0.0",
+  "description": "baidu fis3 plugin for css modules",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fis3",
+    "css",
+    "modules",
+    "css-modules",
+    "postprocessor"
+  ],
+  "author": "xxapp@github.com",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:xxapp/fis3-postprocessor-component-view.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "postcss": "^5.2.10",
+    "postcss-modules-sync": "^0.1.0",
+    "vue-template-compiler": "^2.1.8"
+  }
+}
