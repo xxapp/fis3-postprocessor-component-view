@@ -53,3 +53,5 @@ fis.match('/components/**/*.html', {
     </div>
 </template>
 ```
+
+> css modules的用法参考 https://github.com/css-modules/css-modules
