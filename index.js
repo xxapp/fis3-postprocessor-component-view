@@ -61,7 +61,8 @@ module.exports = function (content, file, setting) {
     // file.addRequire(tokenFile.getId());
 
     if (!output.template) {
-        throw new Error('tag "tempate" not found.');
+        fis.log.error('tag "tempate" not found.');
+        output.template.content = '';
     }
     content = output.template.content || content;
     do {
